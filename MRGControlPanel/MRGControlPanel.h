@@ -10,4 +10,6 @@
 
 @interface MRGControlPanel : NSObject
 
+- (void)addPlugin:(id)plugin;
+
 @end
