@@ -1,5 +1,5 @@
 platform :ios, :deployment_target => "6.0"
 
 target :MRGControlPanelDemoTests, :exclusive => true do
-  pod 'Kiwi', '2.2'
+    pod 'Kiwi/XCTest'
 end
