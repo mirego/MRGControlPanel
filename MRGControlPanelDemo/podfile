@@ -1,7 +1,1 @@
 platform :ios, :deployment_target => "6.0"
-
-pod 'MCUIViewLayout', :git => 'https://github.com/mirego/MCUIViewLayout.git'
-
-target :MRGControlPanelDemoTests, :exclusive => true do
-    pod 'Kiwi/XCTest'
-end

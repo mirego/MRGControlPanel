@@ -31,7 +31,6 @@
 		F82177D9184FC71800DCEE3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177C1184FC71800DCEE3D /* UIKit.framework */; };
 		F82177E1184FC71800DCEE3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F82177DF184FC71800DCEE3D /* InfoPlist.strings */; };
 		F82177F9184FCC5100DCEE3D /* MRGControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F82177F8184FCC5100DCEE3D /* MRGControlPanel.m */; };
-		F82177FB184FD90800DCEE3D /* ControlPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82177FA184FD90800DCEE3D /* ControlPanelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +81,6 @@
 		F82177E0184FC71800DCEE3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F82177F7184FCC5100DCEE3D /* MRGControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanel.h; sourceTree = "<group>"; };
 		F82177F8184FCC5100DCEE3D /* MRGControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanel.m; sourceTree = "<group>"; };
-		F82177FA184FD90800DCEE3D /* ControlPanelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanelTests.m; sourceTree = "<group>"; };
 		F88E4F48184FDDAF004B2467 /* MRGControlPanelPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPlugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,7 +215,6 @@
 		F82177DC184FC71800DCEE3D /* MRGControlPanelDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F82177FA184FD90800DCEE3D /* ControlPanelTests.m */,
 				F82177DD184FC71800DCEE3D /* Supporting Files */,
 				3B51C9B3CB86B9AF65F3540D /* Fixtures */,
 			);
@@ -300,7 +297,7 @@
 				ORGANIZATIONNAME = Mirego;
 				TargetAttributes = {
 					F82177D4184FC71800DCEE3D = {
-						TestTargetID = F82177B9184FC71800DCEE3D /* MRGControlPanelDemo */;
+						TestTargetID = F82177B9184FC71800DCEE3D;
 					};
 				};
 			};
@@ -314,8 +311,6 @@
 			mainGroup = F82177B1184FC71800DCEE3D;
 			productRefGroup = F82177BB184FC71800DCEE3D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				F82177B9184FC71800DCEE3D /* MRGControlPanelDemo */,
@@ -428,7 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82177FB184FD90800DCEE3D /* ControlPanelTests.m in Sources */,
 				3B51C1FE22615D5A9B3636A3 /* MRGControlPanelPluginMock.m in Sources */,
 				3B51CA9AA963D1EAC33CDEEB /* MRGControlPanelControllerTests.m in Sources */,
 				3B51C564958D5F1037A6D96E /* MRGControlPanelTests.m in Sources */,
