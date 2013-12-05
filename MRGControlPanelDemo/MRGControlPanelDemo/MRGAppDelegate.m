@@ -17,26 +17,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-
-    self.window.rootViewController = [[self panel] rootViewController];
-    [self.window makeKeyAndVisible];
+    [self showControlPanel];
 
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     if ([MRGControlPanel isControlPanelURL:url]) {
-        self.window.rootViewController = [[self panel] rootViewController];
+        [self showControlPanel];
     }
 
     return YES;
 }
 
-- (MRGControlPanel*) panel {
+- (void)showControlPanel {
     _panel = [MRGControlPanel controlPanel];
     [_panel addPlugin:[MRGControlPanelSamplePlugin plugin]];
-    return _panel;
+    self.window.rootViewController = [_panel rootViewController];
+    [self.window makeKeyAndVisible];
 }
-
 
 @end

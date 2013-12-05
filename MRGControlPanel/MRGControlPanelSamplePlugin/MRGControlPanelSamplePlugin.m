@@ -41,7 +41,7 @@
 
 - (void)sendData:(id)sendData {
     NSData * MyData = [@"My Sample Plugin Data" dataUsingEncoding:NSUTF8StringEncoding];
-    [_delegate plugin:self requestReportOfData:MyData additionalInfo:@{@"foo":@"bar",@"foobar":@"buzz"}];
+    [_delegate plugin:self requestReportOfData:MyData filename:@"data.log" additionalInfo:@{@"foo":@"bar",@"foobar":@"buzz"}];
 }
 
 - (NSString *)displayName {

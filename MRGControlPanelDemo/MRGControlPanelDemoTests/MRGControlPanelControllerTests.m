@@ -9,10 +9,7 @@
 #import "MRGControlPanelSamplePlugin.h"
 #import "MRGControlPanelPluginMock.h"
 
-@interface MRGControlPanelControllerTests : XCTestCase
-@end
-
-@interface MRGControlPanelControllerTests () <MRGControlPanelControllerDelegate>
+@interface MRGControlPanelControllerTests : XCTestCase <MRGControlPanelControllerDelegate>
 @end
 
 @implementation MRGControlPanelControllerTests {
@@ -35,7 +32,7 @@
 
 
 - (void) testCanGetPluginCount {
-    XCTAssertEqual(1,_controller.pluginCount);
+    XCTAssert(2 == _controller.pluginCount);
 }
 
 - (void) testCanGetPlugin {
@@ -66,7 +63,7 @@
     XCTAssert([_askedPresentedViewController isKindOfClass:[MFMailComposeViewController class]]);
 }
 
-- (void)shouldPresentViewController:(UIViewController *)viewController {
+- (void)shouldPresentMailComposer:(MFMailComposeViewController *)viewController {
     _askedPresentedViewController = viewController;
 }
 

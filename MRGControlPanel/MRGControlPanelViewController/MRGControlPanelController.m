@@ -42,11 +42,11 @@ NSString * _deviceId;
 //------------------------------------------------------------------------------
 #pragma mark MRGControlPanelPluginDelete
 //------------------------------------------------------------------------------
-- (void)plugin:(id <MRGControlPanelPlugin>)plugin requestReportOfData:(NSData *)data additionalInfo:(NSDictionary *)info {
+- (void)plugin:(id <MRGControlPanelPlugin>)plugin requestReportOfData:(NSData *)data filename:(NSString*) filename additionalInfo:(NSDictionary *)info {
     MFMailComposeViewController * composer = [[MFMailComposeViewController alloc] init];
     NSString * subject = [NSString stringWithFormat:@"%@ data",plugin.displayName];
     [composer setSubject:subject];
-    [composer addAttachmentData:data mimeType:@"application/octet-stream" fileName:subject];
+    [composer addAttachmentData:data mimeType:@"application/octet-stream" fileName:filename];
 
     NSString *body= [self emailHTMLBody:info];
     [composer setMessageBody:body isHTML:YES];

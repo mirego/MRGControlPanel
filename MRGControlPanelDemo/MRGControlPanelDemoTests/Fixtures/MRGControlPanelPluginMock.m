@@ -25,7 +25,7 @@ UIViewController * _viewController;
 
 - (void)sendData {
     NSData * data = [@"My Data Is a String" dataUsingEncoding:NSUTF8StringEncoding];
-    [self.delegate plugin:self requestReportOfData:data additionalInfo:@{@"foo":@"bar",@"foobar":@"buzz"}];
+    [self.delegate plugin:self requestReportOfData:data filename:@"test.data" additionalInfo:@{@"foo":@"bar",@"foobar":@"buzz"}];
 }
 
 @end
