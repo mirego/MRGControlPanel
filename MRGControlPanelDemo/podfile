@@ -1,1 +1,3 @@
 platform :ios, :deployment_target => "6.0"
+
+pod 'MRGControlPanel', :path => '../MRGControlPanel.podspec'
