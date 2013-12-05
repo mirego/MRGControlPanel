@@ -9,6 +9,7 @@
 #import "MRGControlPanel.h"
 #import "MRGControlPanelPlugin.h"
 #import "MRGControlPanelViewController.h"
+#import "MRGControlPanelController.h"
 
 @implementation MRGControlPanel {
     NSMutableArray * _plugins;
@@ -52,10 +53,17 @@
 
 - (UIViewController *)rootViewController {
     if (!_rootViewController) {
-        _rootViewController = [[MRGControlPanelViewController alloc] init];
+        MRGControlPanelController * controller = [[MRGControlPanelController alloc] initWithPlugins:_plugins deviceId:self.deviceId];
+        MRGControlPanelViewController * viewController = [[MRGControlPanelViewController alloc] initWithController:controller];
+        UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        _rootViewController = navigationController;
     }
     return _rootViewController;
 }
 
+- (NSString *)deviceId {
+    NSUUID * deviceIdForVendor = [[UIDevice currentDevice] identifierForVendor];
+    return [deviceIdForVendor UUIDString];
+}
 
 @end

@@ -49,4 +49,11 @@ MRGControlPanel * _controlPanel;
     XCTAssert([viewController isKindOfClass:[UIViewController class]]);
 }
 
+- (void) testCanGetUniqueDeviceIdentifier {
+    NSString * id1 = _controlPanel.deviceId;
+    NSString * id2 = _controlPanel.deviceId;
+    XCTAssert(id1);
+    XCTAssert([id1 isEqualToString:id2]);
+}
+
 @end

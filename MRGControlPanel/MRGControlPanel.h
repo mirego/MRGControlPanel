@@ -13,6 +13,7 @@
 @interface MRGControlPanel : NSObject
 @property (nonatomic, readonly) NSUInteger pluginsCount;
 @property(nonatomic, readonly) UIViewController *rootViewController;
+@property (nonatomic, readonly) NSString * deviceId;
 
 + (MRGControlPanel *)controlPanel;
 + (BOOL)isControlPanelURL:(NSURL *)url;

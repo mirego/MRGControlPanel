@@ -7,9 +7,8 @@
 #import <Foundation/Foundation.h>
 #import "MRGControlPanelPlugin.h"
 
-@interface MRGControlPanelSamplePlugin : NSObject <MRGControlPanelPlugin>
+@interface MRGControlPanelSamplePlugin : UIViewController <MRGControlPanelPlugin>
 @property (nonatomic, readonly) NSString * displayName;
-
-+ (id <MRGControlPanelPlugin>)plugin;
+@property (nonatomic, weak) id<MRGControlPanelPluginDelegate> delegate;
 
 @end

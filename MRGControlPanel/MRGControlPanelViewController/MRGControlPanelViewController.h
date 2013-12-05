@@ -6,6 +6,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class MRGControlPanelController;
+
 
 @interface MRGControlPanelViewController : UIViewController
+
+- (id) initWithController:(MRGControlPanelController*) controller;
 @end

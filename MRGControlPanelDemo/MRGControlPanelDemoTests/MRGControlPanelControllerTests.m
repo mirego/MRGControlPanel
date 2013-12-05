@@ -30,7 +30,7 @@
     mock2.displayName = @"MOCK2";
 
     _plugins = @[mock1,mock2];
-    _controller = [[MRGControlPanelController alloc] initWithPlugins:_plugins];
+    _controller = [[MRGControlPanelController alloc] initWithPlugins:_plugins deviceId:@""];
 }
 
 

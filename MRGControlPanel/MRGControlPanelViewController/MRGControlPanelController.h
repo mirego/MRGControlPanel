@@ -9,18 +9,19 @@
 @protocol MRGControlPanelPlugin;
 
 @protocol MRGControlPanelControllerDelegate;
+@class MFMailComposeViewController;
 
 @interface MRGControlPanelController : NSObject
 @property (nonatomic, readonly) NSUInteger pluginCount;
-
 @property(nonatomic, weak) id<MRGControlPanelControllerDelegate> delegate;
 
-- (id<MRGControlPanelPlugin>) pluginAtIndex:(NSUInteger) index;
-- (id)initWithPlugins:(NSArray *)plugins;
+- (id)initWithPlugins:(NSArray *)plugins deviceId:(NSString *) deviceId;
 
+- (id<MRGControlPanelPlugin>) pluginAtIndex:(NSUInteger) index;
 - (UIViewController *)viewControllerForPluginAtIndex:(NSUInteger)index;
+
 @end
 
 @protocol MRGControlPanelControllerDelegate
-- (void) shouldPresentViewController:(UIViewController *) viewController;
+- (void) shouldPresentMailComposer:(MFMailComposeViewController *) viewController;
 @end
