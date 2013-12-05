@@ -26,7 +26,6 @@
     if ([MRGControlPanel isControlPanelURL:url]) {
         [self showControlPanel];
     }
-
     return YES;
 }
 
