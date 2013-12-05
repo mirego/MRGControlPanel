@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3B51C1FE22615D5A9B3636A3 /* MRGControlPanelPluginMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C88598E2271AB6B0834A /* MRGControlPanelPluginMock.m */; };
-		3B51C47F6841DD35D1596926 /* MRGControlPanelControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C2DA582FD8128B6FF818 /* MRGControlPanelControllerTests.m */; };
 		3B51C5327C851B86DDA016DC /* MRGControlPanelSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C6E361918EEDECD10922 /* MRGControlPanelSamplePlugin.m */; };
-		3B51C5418E4FD633374B0BEF /* MRGControlPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C3FD6DD1110AAD79517C /* MRGControlPanelTests.m */; };
+		3B51C564958D5F1037A6D96E /* MRGControlPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C8613B3EADF45FB02DEF /* MRGControlPanelTests.m */; };
 		3B51C753BD02A13FC041D7FE /* MRGControlPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51CEBB9A7AC80A1063512B /* MRGControlPanelController.m */; };
 		3B51C792BCD6386BEF578288 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3B51C4D1ED80C734D7389BD6 /* podfile */; };
 		3B51C80D43FD54ADD005FC63 /* MRGControlPanelPluginViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51CE7F701758A873E953F9 /* MRGControlPanelPluginViewCell.m */; };
+		3B51CA9AA963D1EAC33CDEEB /* MRGControlPanelControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51CFB12BE695C440ABFF0B /* MRGControlPanelControllerTests.m */; };
 		3B51CD8FE6397DD9E0BDA3E8 /* MRGControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C73EBF012696CE520E80 /* MRGControlPanelViewController.m */; };
 		3B51CEC25B4AB9D55A085564 /* MRGControlPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C91862CD707EFB2B58D1 /* MRGControlPanelView.m */; };
 		40E4575718502C690085B5DB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E4575618502C690085B5DB /* MessageUI.framework */; };
@@ -49,20 +49,20 @@
 /* Begin PBXFileReference section */
 		2D5C9B17FC8C49718767DFFB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		3B51C0FE583681BFF735D94B /* MRGControlPanelSamplePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelSamplePlugin.h; sourceTree = "<group>"; };
-		3B51C2DA582FD8128B6FF818 /* MRGControlPanelControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelControllerTests.m; sourceTree = "<group>"; };
 		3B51C35BA8EAC889E2DEF71F /* MRGControlPanelPluginViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPluginViewCell.h; sourceTree = "<group>"; };
 		3B51C37D3FA72E5E935F39B1 /* MRGControlPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelController.h; sourceTree = "<group>"; };
-		3B51C3FD6DD1110AAD79517C /* MRGControlPanelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelTests.m; sourceTree = "<group>"; };
 		3B51C4D1ED80C734D7389BD6 /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 		3B51C698565148BC425AB990 /* MRGControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelViewController.h; sourceTree = "<group>"; };
 		3B51C6E361918EEDECD10922 /* MRGControlPanelSamplePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelSamplePlugin.m; sourceTree = "<group>"; };
 		3B51C73EBF012696CE520E80 /* MRGControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelViewController.m; sourceTree = "<group>"; };
+		3B51C8613B3EADF45FB02DEF /* MRGControlPanelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelTests.m; sourceTree = "<group>"; };
 		3B51C88598E2271AB6B0834A /* MRGControlPanelPluginMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelPluginMock.m; sourceTree = "<group>"; };
 		3B51C91862CD707EFB2B58D1 /* MRGControlPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelView.m; sourceTree = "<group>"; };
 		3B51CD7BBA3C298A67C17FFE /* MRGControlPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelView.h; sourceTree = "<group>"; };
 		3B51CE7F701758A873E953F9 /* MRGControlPanelPluginViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelPluginViewCell.m; sourceTree = "<group>"; };
 		3B51CEBB9A7AC80A1063512B /* MRGControlPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelController.m; sourceTree = "<group>"; };
 		3B51CEE0FD7A7CCE2CC20A20 /* MRGControlPanelPluginMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPluginMock.h; sourceTree = "<group>"; };
+		3B51CFB12BE695C440ABFF0B /* MRGControlPanelControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelControllerTests.m; sourceTree = "<group>"; };
 		40E4575618502C690085B5DB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		54C8CF53DA1744B3BE7EE29E /* libPods-MRGControlPanelDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRGControlPanelDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDA948F44FD47469A084DC5 /* Pods-MRGControlPanelDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRGControlPanelDemoTests.xcconfig"; path = "Pods/Pods-MRGControlPanelDemoTests.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 				3B51CEBB9A7AC80A1063512B /* MRGControlPanelController.m */,
 				3B51C37D3FA72E5E935F39B1 /* MRGControlPanelController.h */,
 				3B51CD9C438C2EC6A561E055 /* Views */,
+				3B51CFB12BE695C440ABFF0B /* MRGControlPanelControllerTests.m */,
 			);
 			path = MRGControlPanelViewController;
 			sourceTree = "<group>";
@@ -224,8 +225,6 @@
 			children = (
 				F82177FA184FD90800DCEE3D /* ControlPanelTests.m */,
 				F82177DD184FC71800DCEE3D /* Supporting Files */,
-				3B51C3FD6DD1110AAD79517C /* MRGControlPanelTests.m */,
-				3B51C2DA582FD8128B6FF818 /* MRGControlPanelControllerTests.m */,
 				3B51C9B3CB86B9AF65F3540D /* Fixtures */,
 			);
 			path = MRGControlPanelDemoTests;
@@ -258,6 +257,7 @@
 				F82177F8184FCC5100DCEE3D /* MRGControlPanel.m */,
 				3B51C69665EBBD46D1D117ED /* MRGControlPanelViewController */,
 				3B51CFE01D5E7B7074BAE8A7 /* MRGControlPanelSamplePlugin */,
+				3B51C8613B3EADF45FB02DEF /* MRGControlPanelTests.m */,
 			);
 			name = MRGControlPanel;
 			path = ../MRGControlPanel;
@@ -447,9 +447,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82177FB184FD90800DCEE3D /* ControlPanelTests.m in Sources */,
-				3B51C5418E4FD633374B0BEF /* MRGControlPanelTests.m in Sources */,
-				3B51C47F6841DD35D1596926 /* MRGControlPanelControllerTests.m in Sources */,
 				3B51C1FE22615D5A9B3636A3 /* MRGControlPanelPluginMock.m in Sources */,
+				3B51CA9AA963D1EAC33CDEEB /* MRGControlPanelControllerTests.m in Sources */,
+				3B51C564958D5F1037A6D96E /* MRGControlPanelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
