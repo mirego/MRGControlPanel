@@ -30,8 +30,6 @@
 		F82177D8184FC71800DCEE3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177BD184FC71800DCEE3D /* Foundation.framework */; };
 		F82177D9184FC71800DCEE3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177C1184FC71800DCEE3D /* UIKit.framework */; };
 		F82177E1184FC71800DCEE3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F82177DF184FC71800DCEE3D /* InfoPlist.strings */; };
-		F82177F0184FC76B00DCEE3D /* MRGRequestTester.m in Sources */ = {isa = PBXBuildFile; fileRef = F82177EE184FC76B00DCEE3D /* MRGRequestTester.m */; };
-		F82177F1184FC76B00DCEE3D /* Requests.plist in Resources */ = {isa = PBXBuildFile; fileRef = F82177EF184FC76B00DCEE3D /* Requests.plist */; };
 		F82177F9184FCC5100DCEE3D /* MRGControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F82177F8184FCC5100DCEE3D /* MRGControlPanel.m */; };
 		F82177FB184FD90800DCEE3D /* ControlPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F82177FA184FD90800DCEE3D /* ControlPanelTests.m */; };
 /* End PBXBuildFile section */
@@ -82,9 +80,6 @@
 		F82177D6184FC71800DCEE3D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F82177DE184FC71800DCEE3D /* MRGControlPanelDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRGControlPanelDemoTests-Info.plist"; sourceTree = "<group>"; };
 		F82177E0184FC71800DCEE3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F82177ED184FC76B00DCEE3D /* MRGRequestTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGRequestTester.h; sourceTree = "<group>"; };
-		F82177EE184FC76B00DCEE3D /* MRGRequestTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGRequestTester.m; sourceTree = "<group>"; };
-		F82177EF184FC76B00DCEE3D /* Requests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Requests.plist; sourceTree = "<group>"; };
 		F82177F7184FCC5100DCEE3D /* MRGControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanel.h; sourceTree = "<group>"; };
 		F82177F8184FCC5100DCEE3D /* MRGControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanel.m; sourceTree = "<group>"; };
 		F82177FA184FD90800DCEE3D /* ControlPanelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanelTests.m; sourceTree = "<group>"; };
@@ -163,7 +158,6 @@
 		F82177B1184FC71800DCEE3D = {
 			isa = PBXGroup;
 			children = (
-				F82177EC184FC76B00DCEE3D /* MRGRequestTester */,
 				F82177F6184FCC5100DCEE3D /* MRGControlPanel */,
 				F82177C3184FC71800DCEE3D /* MRGControlPanelDemo */,
 				F82177DC184FC71800DCEE3D /* MRGControlPanelDemoTests */,
@@ -237,16 +231,6 @@
 				F82177DF184FC71800DCEE3D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F82177EC184FC76B00DCEE3D /* MRGRequestTester */ = {
-			isa = PBXGroup;
-			children = (
-				F82177ED184FC76B00DCEE3D /* MRGRequestTester.h */,
-				F82177EE184FC76B00DCEE3D /* MRGRequestTester.m */,
-				F82177EF184FC76B00DCEE3D /* Requests.plist */,
-			);
-			path = MRGRequestTester;
 			sourceTree = "<group>";
 		};
 		F82177F6184FCC5100DCEE3D /* MRGControlPanel */ = {
@@ -347,7 +331,6 @@
 			files = (
 				F82177C8184FC71800DCEE3D /* InfoPlist.strings in Resources */,
 				F82177D0184FC71800DCEE3D /* Images.xcassets in Resources */,
-				F82177F1184FC76B00DCEE3D /* Requests.plist in Resources */,
 				3B51C792BCD6386BEF578288 /* podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +415,6 @@
 			files = (
 				F82177CA184FC71800DCEE3D /* main.m in Sources */,
 				F82177CE184FC71800DCEE3D /* MRGAppDelegate.m in Sources */,
-				F82177F0184FC76B00DCEE3D /* MRGRequestTester.m in Sources */,
 				F82177F9184FCC5100DCEE3D /* MRGControlPanel.m in Sources */,
 				3B51CD8FE6397DD9E0BDA3E8 /* MRGControlPanelViewController.m in Sources */,
 				3B51C753BD02A13FC041D7FE /* MRGControlPanelController.m in Sources */,
