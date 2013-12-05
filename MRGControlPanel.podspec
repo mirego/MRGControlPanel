@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source_files = 'MRGControlPanel/**/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'MessageUI'
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '7.0'
 end
