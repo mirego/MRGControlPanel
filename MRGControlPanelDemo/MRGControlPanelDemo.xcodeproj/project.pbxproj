@@ -243,7 +243,7 @@
 				ORGANIZATIONNAME = Mirego;
 				TargetAttributes = {
 					F82177D4184FC71800DCEE3D = {
-						TestTargetID = F82177B9184FC71800DCEE3D;
+						TestTargetID = F82177B9184FC71800DCEE3D /* MRGControlPanelDemo */;
 					};
 				};
 			};

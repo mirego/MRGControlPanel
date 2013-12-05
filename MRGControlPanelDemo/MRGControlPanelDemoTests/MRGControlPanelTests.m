@@ -43,6 +43,14 @@ MRGControlPanel * _controlPanel;
     XCTAssert([_controlPanel pluginsCount] == 1);
 }
 
+- (void) testCannotRegisterAnInvalidPlugin {
+    [_controlPanel addPlugin:nil];
+    XCTAssert([_controlPanel pluginsCount] == 0);
+    [_controlPanel addPlugin:(id<MRGControlPanelPlugin>)[[NSObject alloc]init]];
+    XCTAssert([_controlPanel pluginsCount] == 0);
+}
+
+
 - (void) testCanGetRootViewController {
     UIViewController * viewController = _controlPanel.rootViewController;
     XCTAssert(viewController);

@@ -41,7 +41,8 @@
 #pragma mark Plugins modifier
 //------------------------------------------------------------------------------
 - (void)addPlugin:(id <MRGControlPanelPlugin>)plugin {
-    [_plugins addObject:plugin];
+    if (plugin && [plugin conformsToProtocol:@protocol(MRGControlPanelPlugin)])
+        [_plugins addObject:plugin];
 }
 
 //------------------------------------------------------------------------------
