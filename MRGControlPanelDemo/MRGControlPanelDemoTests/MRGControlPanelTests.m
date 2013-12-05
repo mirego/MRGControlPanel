@@ -4,8 +4,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "MRGControlPanel.h"
-#import "MRGControlPanelPlugin.h"
+#import "MRGControlPanel/MRGControlPanel.h"
+#import "MRGControlPanel/MRGControlPanelPlugin.h"
 #import "MRGControlPanelSamplePlugin.h"
 
 @interface MRGControlPanelTests : XCTestCase

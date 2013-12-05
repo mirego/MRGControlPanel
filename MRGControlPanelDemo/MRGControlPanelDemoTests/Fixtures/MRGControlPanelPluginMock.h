@@ -5,7 +5,7 @@
 
 
 #import <Foundation/Foundation.h>
-#import "MRGControlPanelPlugin.h"
+#import "MRGControlPanel/MRGControlPanelPlugin.h"
 
 @interface MRGControlPanelPluginMock : NSObject <MRGControlPanelPlugin>
 @property (nonatomic, strong) NSString * displayName;

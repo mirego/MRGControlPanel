@@ -13,7 +13,6 @@
 		3B51CACB4F296DECDF0CD4E1 /* MRGControlPanelControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C1372A57126DA2845285 /* MRGControlPanelControllerTests.m */; };
 		3B51CE02834BAF2019133ECE /* MRGControlPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51CD76763EE3A6E04FC782 /* MRGControlPanelTests.m */; };
 		40E4575718502C690085B5DB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E4575618502C690085B5DB /* MessageUI.framework */; };
-		4A3C98C5626D454699087954 /* libPods-MRGControlPanelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8CF53DA1744B3BE7EE29E /* libPods-MRGControlPanelDemoTests.a */; };
 		917057233A8345938A535BE1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A827F009DD304A58B60A1608 /* libPods.a */; };
 		F82177BE184FC71800DCEE3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177BD184FC71800DCEE3D /* Foundation.framework */; };
 		F82177C0184FC71800DCEE3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177BF184FC71800DCEE3D /* CoreGraphics.framework */; };
@@ -88,7 +87,6 @@
 				F82177D7184FC71800DCEE3D /* XCTest.framework in Frameworks */,
 				F82177D9184FC71800DCEE3D /* UIKit.framework in Frameworks */,
 				F82177D8184FC71800DCEE3D /* Foundation.framework in Frameworks */,
-				4A3C98C5626D454699087954 /* libPods-MRGControlPanelDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +243,7 @@
 				ORGANIZATIONNAME = Mirego;
 				TargetAttributes = {
 					F82177D4184FC71800DCEE3D = {
-						TestTargetID = F82177B9184FC71800DCEE3D /* MRGControlPanelDemo */;
+						TestTargetID = F82177B9184FC71800DCEE3D;
 					};
 				};
 			};

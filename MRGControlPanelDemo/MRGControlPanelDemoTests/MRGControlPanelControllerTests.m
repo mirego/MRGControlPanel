@@ -5,7 +5,7 @@
 
 #import <XCTest/XCTest.h>
 #import <MessageUI/MessageUI.h>
-#import "MRGControlPanelController.h"
+#import "MRGControlPanel/MRGControlPanelController.h"
 #import "MRGControlPanelSamplePlugin.h"
 #import "MRGControlPanelPluginMock.h"
 
