@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/mirego/MRGControlPanel'
   s.authors  = { 'Mirego' => 'info@mirego.com' }
   s.source   = { :git => 'https://github.com/mirego/MRGControlPanel.git', :tag => s.version.to_s }
-  s.source_files = 'MRGControlPanel/*.{h,m}'
+  s.source_files = 'MRGControlPanel/**/*.{h,m}'
   s.requires_arc = true
-  s.frameworks = 'Configuration'
+  s.frameworks = 'MessageUI'
   s.ios.deployment_target = '6.0'
 end
