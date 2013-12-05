@@ -7,18 +7,36 @@
 //
 
 #import "MRGAppDelegate.h"
+#import "MRGControlPanel.h"
+#import "MRGControlPanelSamplePlugin.h"
 
-@implementation MRGAppDelegate
+@implementation MRGAppDelegate {
+    MRGControlPanel * _panel;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+
+    self.window.rootViewController = [[self panel] rootViewController];
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if ([MRGControlPanel isControlPanelURL:url]) {
+        self.window.rootViewController = [[self panel] rootViewController];
+    }
+
     return YES;
 }
+
+- (MRGControlPanel*) panel {
+    _panel = [MRGControlPanel controlPanel];
+    [_panel addPlugin:[MRGControlPanelSamplePlugin plugin]];
+    return _panel;
+}
+
 
 @end

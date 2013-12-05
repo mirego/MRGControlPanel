@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MRGControlPanel : NSObject
+@protocol MRGControlPanelPlugin;
 
-- (void)addPlugin:(id)plugin;
+@interface MRGControlPanel : NSObject
+@property (nonatomic, readonly) NSUInteger pluginsCount;
+@property(nonatomic, readonly) UIViewController *rootViewController;
+
++ (MRGControlPanel *)controlPanel;
++ (BOOL)isControlPanelURL:(NSURL *)url;
+- (void)addPlugin:(id <MRGControlPanelPlugin>)plugin;
 
 @end

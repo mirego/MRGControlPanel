@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B51C1FE22615D5A9B3636A3 /* MRGControlPanelPluginMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C88598E2271AB6B0834A /* MRGControlPanelPluginMock.m */; };
+		3B51C47F6841DD35D1596926 /* MRGControlPanelControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C2DA582FD8128B6FF818 /* MRGControlPanelControllerTests.m */; };
+		3B51C53B630996B2E20FCD3E /* MRGControlPanelSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C2EB3B6AFCC265054086 /* MRGControlPanelSamplePlugin.m */; };
+		3B51C5418E4FD633374B0BEF /* MRGControlPanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C3FD6DD1110AAD79517C /* MRGControlPanelTests.m */; };
+		3B51C753BD02A13FC041D7FE /* MRGControlPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51CEBB9A7AC80A1063512B /* MRGControlPanelController.m */; };
+		3B51CD8FE6397DD9E0BDA3E8 /* MRGControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51C73EBF012696CE520E80 /* MRGControlPanelViewController.m */; };
+		40E4575718502C690085B5DB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E4575618502C690085B5DB /* MessageUI.framework */; };
 		4A3C98C5626D454699087954 /* libPods-MRGControlPanelDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C8CF53DA1744B3BE7EE29E /* libPods-MRGControlPanelDemoTests.a */; };
 		F82177BE184FC71800DCEE3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177BD184FC71800DCEE3D /* Foundation.framework */; };
 		F82177C0184FC71800DCEE3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177BF184FC71800DCEE3D /* CoreGraphics.framework */; };
@@ -36,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B51C2DA582FD8128B6FF818 /* MRGControlPanelControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelControllerTests.m; sourceTree = "<group>"; };
+		3B51C2EB3B6AFCC265054086 /* MRGControlPanelSamplePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelSamplePlugin.m; sourceTree = "<group>"; };
+		3B51C37D3FA72E5E935F39B1 /* MRGControlPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelController.h; sourceTree = "<group>"; };
+		3B51C3FD6DD1110AAD79517C /* MRGControlPanelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelTests.m; sourceTree = "<group>"; };
+		3B51C698565148BC425AB990 /* MRGControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelViewController.h; sourceTree = "<group>"; };
+		3B51C73EBF012696CE520E80 /* MRGControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelViewController.m; sourceTree = "<group>"; };
+		3B51C83F9CB6F8A6C58B1DB5 /* MRGControlPanelSamplePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelSamplePlugin.h; sourceTree = "<group>"; };
+		3B51C88598E2271AB6B0834A /* MRGControlPanelPluginMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelPluginMock.m; sourceTree = "<group>"; };
+		3B51CEBB9A7AC80A1063512B /* MRGControlPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelController.m; sourceTree = "<group>"; };
+		3B51CEE0FD7A7CCE2CC20A20 /* MRGControlPanelPluginMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPluginMock.h; sourceTree = "<group>"; };
+		40E4575618502C690085B5DB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		54C8CF53DA1744B3BE7EE29E /* libPods-MRGControlPanelDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRGControlPanelDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDA948F44FD47469A084DC5 /* Pods-MRGControlPanelDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRGControlPanelDemoTests.xcconfig"; path = "Pods/Pods-MRGControlPanelDemoTests.xcconfig"; sourceTree = "<group>"; };
 		F82177BA184FC71800DCEE3D /* MRGControlPanelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRGControlPanelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E4575718502C690085B5DB /* MessageUI.framework in Frameworks */,
 				F82177C0184FC71800DCEE3D /* CoreGraphics.framework in Frameworks */,
 				F82177C2184FC71800DCEE3D /* UIKit.framework in Frameworks */,
 				F82177BE184FC71800DCEE3D /* Foundation.framework in Frameworks */,
@@ -87,6 +106,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B51C69665EBBD46D1D117ED /* MRGControlPanelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B51C73EBF012696CE520E80 /* MRGControlPanelViewController.m */,
+				3B51C698565148BC425AB990 /* MRGControlPanelViewController.h */,
+				3B51CEBB9A7AC80A1063512B /* MRGControlPanelController.m */,
+				3B51C37D3FA72E5E935F39B1 /* MRGControlPanelController.h */,
+			);
+			path = MRGControlPanelViewController;
+			sourceTree = "<group>";
+		};
+		3B51C97F96ADA40A07CAEC20 /* MRGControlPanelSamplePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				3B51C2EB3B6AFCC265054086 /* MRGControlPanelSamplePlugin.m */,
+				3B51C83F9CB6F8A6C58B1DB5 /* MRGControlPanelSamplePlugin.h */,
+			);
+			path = MRGControlPanelSamplePlugin;
+			sourceTree = "<group>";
+		};
+		3B51C9B3CB86B9AF65F3540D /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				3B51CEE0FD7A7CCE2CC20A20 /* MRGControlPanelPluginMock.h */,
+				3B51C88598E2271AB6B0834A /* MRGControlPanelPluginMock.m */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		F82177B1184FC71800DCEE3D = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +145,7 @@
 				F82177BC184FC71800DCEE3D /* Frameworks */,
 				F82177BB184FC71800DCEE3D /* Products */,
 				8FDA948F44FD47469A084DC5 /* Pods-MRGControlPanelDemoTests.xcconfig */,
+				3B51C97F96ADA40A07CAEC20 /* MRGControlPanelSamplePlugin */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +161,7 @@
 		F82177BC184FC71800DCEE3D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40E4575618502C690085B5DB /* MessageUI.framework */,
 				F82177BD184FC71800DCEE3D /* Foundation.framework */,
 				F82177BF184FC71800DCEE3D /* CoreGraphics.framework */,
 				F82177C1184FC71800DCEE3D /* UIKit.framework */,
@@ -148,6 +198,9 @@
 			children = (
 				F82177FA184FD90800DCEE3D /* ControlPanelTests.m */,
 				F82177DD184FC71800DCEE3D /* Supporting Files */,
+				3B51C3FD6DD1110AAD79517C /* MRGControlPanelTests.m */,
+				3B51C2DA582FD8128B6FF818 /* MRGControlPanelControllerTests.m */,
+				3B51C9B3CB86B9AF65F3540D /* Fixtures */,
 			);
 			path = MRGControlPanelDemoTests;
 			sourceTree = "<group>";
@@ -177,6 +230,7 @@
 				F88E4F48184FDDAF004B2467 /* MRGControlPanelPlugin.h */,
 				F82177F7184FCC5100DCEE3D /* MRGControlPanel.h */,
 				F82177F8184FCC5100DCEE3D /* MRGControlPanel.m */,
+				3B51C69665EBBD46D1D117ED /* MRGControlPanelViewController */,
 			);
 			name = MRGControlPanel;
 			path = ../MRGControlPanel;
@@ -233,7 +287,7 @@
 				ORGANIZATIONNAME = Mirego;
 				TargetAttributes = {
 					F82177D4184FC71800DCEE3D = {
-						TestTargetID = F82177B9184FC71800DCEE3D;
+						TestTargetID = F82177B9184FC71800DCEE3D /* MRGControlPanelDemo */;
 					};
 				};
 			};
@@ -318,6 +372,9 @@
 				F82177CE184FC71800DCEE3D /* MRGAppDelegate.m in Sources */,
 				F82177F0184FC76B00DCEE3D /* MRGRequestTester.m in Sources */,
 				F82177F9184FCC5100DCEE3D /* MRGControlPanel.m in Sources */,
+				3B51C53B630996B2E20FCD3E /* MRGControlPanelSamplePlugin.m in Sources */,
+				3B51CD8FE6397DD9E0BDA3E8 /* MRGControlPanelViewController.m in Sources */,
+				3B51C753BD02A13FC041D7FE /* MRGControlPanelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +383,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F82177FB184FD90800DCEE3D /* ControlPanelTests.m in Sources */,
+				3B51C5418E4FD633374B0BEF /* MRGControlPanelTests.m in Sources */,
+				3B51C47F6841DD35D1596926 /* MRGControlPanelControllerTests.m in Sources */,
+				3B51C1FE22615D5A9B3636A3 /* MRGControlPanelPluginMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

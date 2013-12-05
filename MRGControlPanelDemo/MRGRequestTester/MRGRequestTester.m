@@ -93,10 +93,10 @@ static NSString const *kMGOPassword = @"Password";
 - (void)testRequestsAtIndex:(NSUInteger)index
 {
     if (_currentRequestedIndex < [_requests count]) {
-        NSDictionary *request = [_requests objectAtIndex:index];
-        NSString *method = [[request objectForKey:kMGORequestMethod] uppercaseString];
-        NSString *url = [request objectForKey:kMGORequestURL];
-        NSDictionary *parameters = [request objectForKey:KMGORequestParameters];
+        //NSDictionary *request = [_requests objectAtIndex:index];
+        //NSString *method = [[request objectForKey:kMGORequestMethod] uppercaseString];
+        //NSString *url = [request objectForKey:kMGORequestURL];
+        //NSDictionary *parameters = [request objectForKey:KMGORequestParameters];
         
 //        if ([method isEqualToString:@"GET"]) {
 //            [_requestManager GET:url parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
