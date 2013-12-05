@@ -25,6 +25,11 @@
 		F82177D8184FC71800DCEE3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177BD184FC71800DCEE3D /* Foundation.framework */; };
 		F82177D9184FC71800DCEE3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82177C1184FC71800DCEE3D /* UIKit.framework */; };
 		F82177E1184FC71800DCEE3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F82177DF184FC71800DCEE3D /* InfoPlist.strings */; };
+		F88E4FA21850DEFC004B2467 /* MRGControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F981850DEFC004B2467 /* MRGControlPanel.m */; };
+		F88E4FA31850DEFC004B2467 /* MRGControlPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F9A1850DEFC004B2467 /* MRGControlPanelController.m */; };
+		F88E4FA41850DEFC004B2467 /* MRGControlPanelPluginViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F9D1850DEFC004B2467 /* MRGControlPanelPluginViewCell.m */; };
+		F88E4FA51850DEFC004B2467 /* MRGControlPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F9F1850DEFC004B2467 /* MRGControlPanelView.m */; };
+		F88E4FA61850DEFC004B2467 /* MRGControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4FA11850DEFC004B2467 /* MRGControlPanelViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,17 @@
 		F82177D6184FC71800DCEE3D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F82177DE184FC71800DCEE3D /* MRGControlPanelDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRGControlPanelDemoTests-Info.plist"; sourceTree = "<group>"; };
 		F82177E0184FC71800DCEE3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F88E4F971850DEFC004B2467 /* MRGControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanel.h; sourceTree = "<group>"; };
+		F88E4F981850DEFC004B2467 /* MRGControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanel.m; sourceTree = "<group>"; };
+		F88E4F991850DEFC004B2467 /* MRGControlPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelController.h; sourceTree = "<group>"; };
+		F88E4F9A1850DEFC004B2467 /* MRGControlPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelController.m; sourceTree = "<group>"; };
+		F88E4F9B1850DEFC004B2467 /* MRGControlPanelPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPlugin.h; sourceTree = "<group>"; };
+		F88E4F9C1850DEFC004B2467 /* MRGControlPanelPluginViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPluginViewCell.h; sourceTree = "<group>"; };
+		F88E4F9D1850DEFC004B2467 /* MRGControlPanelPluginViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelPluginViewCell.m; sourceTree = "<group>"; };
+		F88E4F9E1850DEFC004B2467 /* MRGControlPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelView.h; sourceTree = "<group>"; };
+		F88E4F9F1850DEFC004B2467 /* MRGControlPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelView.m; sourceTree = "<group>"; };
+		F88E4FA01850DEFC004B2467 /* MRGControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelViewController.h; sourceTree = "<group>"; };
+		F88E4FA11850DEFC004B2467 /* MRGControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,7 @@
 		F82177B1184FC71800DCEE3D = {
 			isa = PBXGroup;
 			children = (
+				F88E4F961850DEFC004B2467 /* MRGControlPanel */,
 				F82177C3184FC71800DCEE3D /* MRGControlPanelDemo */,
 				F82177DC184FC71800DCEE3D /* MRGControlPanelDemoTests */,
 				F82177BC184FC71800DCEE3D /* Frameworks */,
@@ -190,6 +207,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F88E4F961850DEFC004B2467 /* MRGControlPanel */ = {
+			isa = PBXGroup;
+			children = (
+				F88E4F971850DEFC004B2467 /* MRGControlPanel.h */,
+				F88E4F981850DEFC004B2467 /* MRGControlPanel.m */,
+				F88E4F991850DEFC004B2467 /* MRGControlPanelController.h */,
+				F88E4F9A1850DEFC004B2467 /* MRGControlPanelController.m */,
+				F88E4F9B1850DEFC004B2467 /* MRGControlPanelPlugin.h */,
+				F88E4F9C1850DEFC004B2467 /* MRGControlPanelPluginViewCell.h */,
+				F88E4F9D1850DEFC004B2467 /* MRGControlPanelPluginViewCell.m */,
+				F88E4F9E1850DEFC004B2467 /* MRGControlPanelView.h */,
+				F88E4F9F1850DEFC004B2467 /* MRGControlPanelView.m */,
+				F88E4FA01850DEFC004B2467 /* MRGControlPanelViewController.h */,
+				F88E4FA11850DEFC004B2467 /* MRGControlPanelViewController.m */,
+			);
+			name = MRGControlPanel;
+			path = ../MRGControlPanel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,7 +279,7 @@
 				ORGANIZATIONNAME = Mirego;
 				TargetAttributes = {
 					F82177D4184FC71800DCEE3D = {
-						TestTargetID = F82177B9184FC71800DCEE3D /* MRGControlPanelDemo */;
+						TestTargetID = F82177B9184FC71800DCEE3D;
 					};
 				};
 			};
@@ -354,9 +390,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88E4FA61850DEFC004B2467 /* MRGControlPanelViewController.m in Sources */,
 				F82177CA184FC71800DCEE3D /* main.m in Sources */,
 				F82177CE184FC71800DCEE3D /* MRGAppDelegate.m in Sources */,
+				F88E4FA51850DEFC004B2467 /* MRGControlPanelView.m in Sources */,
 				3B51C247CA62862BB91E149F /* MRGControlPanelSamplePlugin.m in Sources */,
+				F88E4FA41850DEFC004B2467 /* MRGControlPanelPluginViewCell.m in Sources */,
+				F88E4FA21850DEFC004B2467 /* MRGControlPanel.m in Sources */,
+				F88E4FA31850DEFC004B2467 /* MRGControlPanelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

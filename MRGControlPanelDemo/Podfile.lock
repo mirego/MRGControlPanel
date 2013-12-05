@@ -1,14 +1,1 @@
-PODS:
-  - MRGControlPanel (0.0.2)
-
-DEPENDENCIES:
-  - MRGControlPanel (from `../MRGControlPanel.podspec`)
-
-EXTERNAL SOURCES:
-  MRGControlPanel:
-    :path: ../MRGControlPanel.podspec
-
-SPEC CHECKSUMS:
-  MRGControlPanel: 952896af896686c3a03a9f1ffe361bad0d71725c
-
-COCOAPODS: 0.27.1
+COCOAPODS: 0.28.0
