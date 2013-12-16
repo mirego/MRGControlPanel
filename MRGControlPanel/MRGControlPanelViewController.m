@@ -48,6 +48,7 @@
     if (!viewCell) {
         viewCell = [[MRGControlPanelPluginViewCell alloc] initWithFrame:CGRectZero];
     }
+    viewCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     [viewCell configureWithPlugin:[_controller pluginAtIndex:(NSUInteger)indexPath.row]];
     return viewCell;
 }
