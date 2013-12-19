@@ -9,6 +9,7 @@
 
 @implementation MRGControlPanelPluginMock {
 UIViewController * _viewController;
+
 }
 
 + (id <MRGControlPanelPlugin>)plugin {
@@ -20,6 +21,17 @@ UIViewController * _viewController;
         _viewController = [[UIViewController alloc] init];
     }
     return _viewController;
+}
+
+- (BOOL) supportsPath:(NSString *) path {
+    _lastCalledSupportPath = path;
+    NSArray * paths = [path componentsSeparatedByString:@"/"];
+    return (paths.count > 1 && [paths[1] isEqualToString:@"mock"]);
+}
+
+- (UIViewController *)viewControllerForPath:(NSString *)path {
+    _lastCalledViewControllerPath = path;
+    return [[UIViewController alloc] init];
 }
 
 

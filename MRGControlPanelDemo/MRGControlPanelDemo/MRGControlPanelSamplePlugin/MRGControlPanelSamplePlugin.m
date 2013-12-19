@@ -24,6 +24,15 @@
     return [[MRGControlPanelSamplePlugin alloc] init];
 }
 
+- (BOOL)supportsPath:(NSString *)path {
+    return [path isEqualToString:@"/sample"];
+}
+
+- (UIViewController *)viewControllerForPath:(NSString *)path {
+    return self;
+}
+
+
 - (void)loadView {
     [super loadView];
     UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];

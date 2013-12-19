@@ -17,6 +17,9 @@
 + (id <MRGControlPanelPlugin>)plugin; // New instance of the plugin
 - (UIViewController *)viewController; // New instance of the plugin's view controller
 
+@optional
+- (BOOL) supportsPath:(NSString *) path; // if app started with ://panel/foo/bar ... /foo/bar will be passed
+- (UIViewController *)viewControllerForPath:(NSString *) path; // New instance of the plugin's view controller... see supportsPath
 @end
 
 @protocol MRGControlPanelPluginDelegate

@@ -29,7 +29,7 @@
 }
 
 + (BOOL)isControlPanelURL:(NSURL *)url {
-    NSString *validRouteRegex = @"^.*:\\/\\/panel$";
+    NSString *validRouteRegex = @"^.*:\\/\\/panel($|\\/)";
     return  ([url.absoluteString rangeOfString:validRouteRegex options:NSRegularExpressionSearch].location != NSNotFound);
 }
 
@@ -65,6 +65,24 @@
 - (NSString *)deviceId {
     NSUUID * deviceIdForVendor = [[UIDevice currentDevice] identifierForVendor];
     return [deviceIdForVendor UUIDString];
+}
+
+- (BOOL)openURL:(NSURL *)url {
+    NSString * urlStr = [url absoluteString];
+    NSRange range = [urlStr rangeOfString:@"://panel/"];
+    if (range.length > 0) {
+        urlStr = [urlStr substringFromIndex:range.location + range.length -1];
+        for (id<MRGControlPanelPlugin> plugin in _plugins) {
+            if ([plugin respondsToSelector:@selector(supportsPath:)] && [plugin supportsPath:urlStr] && [plugin respondsToSelector:@selector(viewControllerForPath:)]) {
+                UIViewController * viewController = [plugin viewControllerForPath:urlStr];
+                UINavigationController * navController = (UINavigationController *)[self rootViewController];
+                [navController pushViewController:viewController animated:YES];
+            }
+        }
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 @end

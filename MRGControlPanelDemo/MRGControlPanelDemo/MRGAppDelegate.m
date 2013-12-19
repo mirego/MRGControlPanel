@@ -25,6 +25,7 @@
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     if ([MRGControlPanel isControlPanelURL:url]) {
         [self showControlPanel];
+        [_panel openURL:url];
     }
     return YES;
 }

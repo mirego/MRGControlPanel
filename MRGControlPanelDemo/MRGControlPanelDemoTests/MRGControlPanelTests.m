@@ -4,9 +4,9 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "MRGControlPanel/MRGControlPanel.h"
-#import "MRGControlPanel/MRGControlPanelPlugin.h"
 #import "MRGControlPanelSamplePlugin.h"
+#import "MRGControlPanel.h"
+#import "MRGControlPanelPluginMock.h"
 
 @interface MRGControlPanelTests : XCTestCase
 @end
@@ -35,6 +35,14 @@ MRGControlPanel * _controlPanel;
     route = [NSURL URLWithString:@"myOtherAppName://panel"];
     shouldBeAValidRoute = [MRGControlPanel isControlPanelURL:route];
     XCTAssert(shouldBeAValidRoute);
+
+    route = [NSURL URLWithString:@"myOtherAppName://panel/test"];
+    shouldBeAValidRoute = [MRGControlPanel isControlPanelURL:route];
+    XCTAssert(shouldBeAValidRoute);
+
+    route = [NSURL URLWithString:@"myOtherAppName://panel22/test"];
+    shouldBeAValidRoute = [MRGControlPanel isControlPanelURL:route];
+    XCTAssert(!shouldBeAValidRoute);
 }
 
 - (void) testCanRegisterPlugin {
@@ -62,6 +70,15 @@ MRGControlPanel * _controlPanel;
     NSString * id2 = _controlPanel.deviceId;
     XCTAssert(id1);
     XCTAssert([id1 isEqualToString:id2]);
+}
+
+- (void) testCanOpenSpecificURL {
+    MRGControlPanelPluginMock * mock = [MRGControlPanelPluginMock plugin];
+    [_controlPanel addPlugin:mock];
+    [_controlPanel openURL:[NSURL URLWithString:@"foo://panel/mock"]];
+    XCTAssert([mock.lastCalledSupportPath isEqualToString:@"/mock"]);
+    XCTAssert([mock.lastCalledViewControllerPath isEqualToString:@"/mock"]);
+
 }
 
 @end

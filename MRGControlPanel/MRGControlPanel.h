@@ -18,5 +18,5 @@
 + (MRGControlPanel *)controlPanel;
 + (BOOL)isControlPanelURL:(NSURL *)url;
 - (void)addPlugin:(id <MRGControlPanelPlugin>)plugin;
-
+- (BOOL)openURL:(NSURL *)url;
 @end

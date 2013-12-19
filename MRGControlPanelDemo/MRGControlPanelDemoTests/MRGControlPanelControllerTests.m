@@ -5,7 +5,7 @@
 
 #import <XCTest/XCTest.h>
 #import <MessageUI/MessageUI.h>
-#import "MRGControlPanel/MRGControlPanelController.h"
+#import "MRGControlPanelController.h"
 #import "MRGControlPanelSamplePlugin.h"
 #import "MRGControlPanelPluginMock.h"
 
@@ -65,6 +65,11 @@
 
 - (void)shouldPresentMailComposer:(MFMailComposeViewController *)viewController {
     _askedPresentedViewController = viewController;
+}
+
+- (void) testCanCheckIfURLIsSupported {
+    MRGControlPanelPluginMock * mock = _plugins[0];
+    XCTAssert([mock supportsPath:@"/mock"]);
 }
 
 @end
