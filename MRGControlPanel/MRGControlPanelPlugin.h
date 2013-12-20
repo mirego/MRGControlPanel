@@ -24,4 +24,5 @@
 
 @protocol MRGControlPanelPluginDelegate
 - (void)plugin:(id <MRGControlPanelPlugin>)plugin requestReportOfData:(NSData *)data filename:(NSString*) filename additionalInfo:(NSDictionary *)info;
+- (void)plugin:(id <MRGControlPanelPlugin>)plugin requestReportOfData:(NSData *)data filename:(NSString*) filename mimeType:(NSString *) mimeType additionalInfo:(NSDictionary *)info;
 @end
