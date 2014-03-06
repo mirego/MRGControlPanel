@@ -27,7 +27,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F82177D4184FC71800DCEE3D"
+               BuildableName = "MRGControlPanelDemoTests.xctest"
+               BlueprintName = "MRGControlPanelDemoTests"
+               ReferencedContainer = "container:MRGControlPanelDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F82177B9184FC71800DCEE3D"
+            BuildableName = "MRGControlPanelDemo.app"
+            BlueprintName = "MRGControlPanelDemo"
+            ReferencedContainer = "container:MRGControlPanelDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"

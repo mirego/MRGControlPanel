@@ -26,7 +26,6 @@
 		F88E4FA21850DEFC004B2467 /* MRGControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F981850DEFC004B2467 /* MRGControlPanel.m */; };
 		F88E4FA31850DEFC004B2467 /* MRGControlPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F9A1850DEFC004B2467 /* MRGControlPanelController.m */; };
 		F88E4FA41850DEFC004B2467 /* MRGControlPanelPluginViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F9D1850DEFC004B2467 /* MRGControlPanelPluginViewCell.m */; };
-		F88E4FA51850DEFC004B2467 /* MRGControlPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4F9F1850DEFC004B2467 /* MRGControlPanelView.m */; };
 		F88E4FA61850DEFC004B2467 /* MRGControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88E4FA11850DEFC004B2467 /* MRGControlPanelViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -70,8 +69,6 @@
 		F88E4F9B1850DEFC004B2467 /* MRGControlPanelPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPlugin.h; sourceTree = "<group>"; };
 		F88E4F9C1850DEFC004B2467 /* MRGControlPanelPluginViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelPluginViewCell.h; sourceTree = "<group>"; };
 		F88E4F9D1850DEFC004B2467 /* MRGControlPanelPluginViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelPluginViewCell.m; sourceTree = "<group>"; };
-		F88E4F9E1850DEFC004B2467 /* MRGControlPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelView.h; sourceTree = "<group>"; };
-		F88E4F9F1850DEFC004B2467 /* MRGControlPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelView.m; sourceTree = "<group>"; };
 		F88E4FA01850DEFC004B2467 /* MRGControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRGControlPanelViewController.h; sourceTree = "<group>"; };
 		F88E4FA11850DEFC004B2467 /* MRGControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRGControlPanelViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,8 +201,6 @@
 				F88E4F9B1850DEFC004B2467 /* MRGControlPanelPlugin.h */,
 				F88E4F9C1850DEFC004B2467 /* MRGControlPanelPluginViewCell.h */,
 				F88E4F9D1850DEFC004B2467 /* MRGControlPanelPluginViewCell.m */,
-				F88E4F9E1850DEFC004B2467 /* MRGControlPanelView.h */,
-				F88E4F9F1850DEFC004B2467 /* MRGControlPanelView.m */,
 				F88E4FA01850DEFC004B2467 /* MRGControlPanelViewController.h */,
 				F88E4FA11850DEFC004B2467 /* MRGControlPanelViewController.m */,
 			);
@@ -312,7 +307,6 @@
 				F88E4FA61850DEFC004B2467 /* MRGControlPanelViewController.m in Sources */,
 				F82177CA184FC71800DCEE3D /* main.m in Sources */,
 				F82177CE184FC71800DCEE3D /* MRGAppDelegate.m in Sources */,
-				F88E4FA51850DEFC004B2467 /* MRGControlPanelView.m in Sources */,
 				3B51C247CA62862BB91E149F /* MRGControlPanelSamplePlugin.m in Sources */,
 				F88E4FA41850DEFC004B2467 /* MRGControlPanelPluginViewCell.m in Sources */,
 				F88E4FA21850DEFC004B2467 /* MRGControlPanel.m in Sources */,
