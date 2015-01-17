@@ -28,6 +28,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class UIViewController;
 @protocol MRGControlPanelPlugin;
 
 @interface MRGControlPanel : NSObject
