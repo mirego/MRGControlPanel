@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'MessageUI'
 
-  s.platform = :ios, '7.0'
+  s.platform = :ios, '6.0'
 end
