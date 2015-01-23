@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary  = 'Library to create a backdoor control panel for your application.'
   s.homepage = 'http://open.mirego.com'
   s.authors  = { 'Mirego' => 'info@mirego.com' }
-  s.source   = { :git => 'git@github.com:mirego/MRGControlPanel.git', :tag => s.version.to_s }
+  s.source   = { :git => 'https://github.com/mirego/MRGControlPanel.git', :tag => s.version.to_s }
   s.source_files = 'MRGControlPanel/**/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'MessageUI'
