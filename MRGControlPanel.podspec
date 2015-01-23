@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MRGControlPanel'
-  s.version  = '0.0.5'
+  s.version  = '0.0.6'
   s.license  = 'BSD 3-Clause'
   s.summary  = 'Library to create a backdoor control panel for your application.'
   s.homepage = 'http://open.mirego.com'
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'MessageUI'
 
-  s.platform = :ios, '7.0'
+  s.platform = :ios, '6.0'
 end
