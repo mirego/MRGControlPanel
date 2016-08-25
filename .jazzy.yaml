@@ -5,3 +5,4 @@ module_version: 0.0.7
 copyright: 2016 Mirego
 readme: README.md
 objc: true
+skip_undocumented: true

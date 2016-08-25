@@ -25,4 +25,4 @@ build/
 Pods
 # AppCode specific files
 .idea/
-*.iml
+*.imlundocumented.json
