@@ -26,7 +26,7 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol MRGControlPanelPlugin;
 @protocol MRGControlPanelControllerDelegate;
@@ -37,7 +37,8 @@
 @property (nonatomic, readonly) NSUInteger pluginCount;
 @property(nonatomic, weak) id<MRGControlPanelControllerDelegate> delegate;
 
-- (id)initWithPlugins:(NSArray *)plugins deviceId:(NSString *) deviceId;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithPlugins:(NSArray *)plugins deviceId:(NSString *) deviceId;
 - (id<MRGControlPanelPlugin>) pluginAtIndex:(NSUInteger) index;
 - (UIViewController *)viewControllerForPluginAtIndex:(NSUInteger)index;
 

@@ -38,7 +38,7 @@
     NSString * _deviceId;
 }
 
-- (id)initWithPlugins:(NSArray *)plugins deviceId:(NSString *) deviceId {
+- (instancetype)initWithPlugins:(NSArray *)plugins deviceId:(NSString *) deviceId {
     self = [super init];
     if (self) {
         _plugins = plugins;

@@ -26,12 +26,13 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @class MRGControlPanelController;
 
 @interface MRGControlPanelViewController : UITableViewController
 
-- (id)initWithController:(MRGControlPanelController*) controller;
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithController:(MRGControlPanelController*) controller;
 
 @end

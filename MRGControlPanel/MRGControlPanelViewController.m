@@ -38,7 +38,7 @@
     MRGControlPanelController * _controller;
 }
 
-- (id)initWithController:(MRGControlPanelController*) controller {
+- (instancetype)initWithController:(MRGControlPanelController*) controller {
     self = [super init];
     if (self) {
         _controller = controller;

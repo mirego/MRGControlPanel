@@ -36,7 +36,7 @@
     UIViewController * _rootViewController;
 }
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
         _plugins = [[NSMutableArray alloc] initWithCapacity:5];
