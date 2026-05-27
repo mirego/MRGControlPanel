@@ -57,6 +57,8 @@
 }
 
 - (void) testCanReceiveDataFromPlugin {
+    if (![MFMailComposeViewController canSendMail]) return;
+
     _controller.delegate = self;
     MRGControlPanelPluginMock * plugin = (MRGControlPanelPluginMock *)[_controller pluginAtIndex:0];
     [plugin sendData];

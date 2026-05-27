@@ -26,3 +26,7 @@ Pods
 # AppCode specific files
 .idea/
 *.imlundocumented.json
+
+# Swift Package Manager
+.build/
+.swiftpm/
