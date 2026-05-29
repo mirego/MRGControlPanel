@@ -9,7 +9,7 @@ The Control panel of your dream
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/mirego/MRGControlPanel.git", from: "0.0.8")
+    .package(url: "https://github.com/mirego/MRGControlPanel.git", from: "0.1.0")
 ]
 ```
 
