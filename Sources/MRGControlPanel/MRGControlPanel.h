@@ -27,9 +27,7 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
-
-@class UIViewController;
-@protocol MRGControlPanelPlugin;
+#import "MRGControlPanelPlugin.h"
 
 @interface MRGControlPanel : NSObject
 
