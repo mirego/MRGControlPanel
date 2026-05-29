@@ -1,6 +1,22 @@
 # MRGControlPanel
 The Control panel of your dream
 
+### Installation with Swift Package Manager
+
+[Swift Package Manager](https://swift.org/package-manager) is a tool for managing the distribution of Swift code and is integrated into Xcode.
+
+#### Package.swift
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/mirego/MRGControlPanel.git", from: "0.0.8")
+]
+```
+
+#### Xcode
+
+In Xcode, go to **File → Add Package Dependencies…**, enter the repository URL `https://github.com/mirego/MRGControlPanel.git`, and select the version you want to use.
+
 ### Installation with CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like this super control panel in your projects.

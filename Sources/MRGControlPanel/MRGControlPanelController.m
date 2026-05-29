@@ -71,6 +71,8 @@
 }
 
 - (void)plugin:(id <MRGControlPanelPlugin>)plugin requestReportOfData:(NSData *)data filename:(NSString *)filename mimeType:(NSString *)mimeType additionalInfo:(NSDictionary *)info {
+    if (![MFMailComposeViewController canSendMail]) return;
+
     MFMailComposeViewController * composer = [[MFMailComposeViewController alloc] init];
     NSString * subject = [NSString stringWithFormat:@"%@ data",plugin.displayName];
     [composer setSubject:subject];

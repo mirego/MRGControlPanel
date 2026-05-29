@@ -100,7 +100,9 @@
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
     if (error || (result == MFMailComposeResultFailed)) {
-        [[[UIAlertView alloc] initWithTitle:@"Cannot send message" message:@"The message cannot be send, please validate your email configuration in the settings pane and that network is reachable." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cannot send message" message:@"The message cannot be send, please validate your email configuration in the settings pane and that network is reachable." preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [controller presentViewController:alert animated:YES completion:nil];
     }
 
     [controller dismissViewControllerAnimated:YES completion:nil];
